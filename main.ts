@@ -8,17 +8,18 @@ loraBit.whenReceived(function () {
         }
     }
 })
+loraBit.reset()
 loraBit.param_ABP(
 "260418F5",
 "8587FCF5898C6AAD62884C2310E022BC",
 "0562BD0A64B6E035A8EAA8A4401B2237"
 )
-loraBit.join(loraBit_freq_Plan.AS923)
 loraBit.param_Config(
 2,
 5,
 loraBit_ADR.On
 )
+loraBit.join(loraBit_freq_Plan.AS923)
 basic.forever(function () {
     if (loraBit.available()) {
         loraBit.sendPacket(loraBit_Confirmed.Uncomfirmed, 1, loraBit.packHexString("Hello, World!"))
