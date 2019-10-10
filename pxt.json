@@ -1,5 +1,5 @@
 {
-    "name": "lorabit_demo_helloworld_abp",
+    "name": "pxt-lorabit_demo_helloworld_abp",
     "dependencies": {
         "core": "*",
         "radio": "*",
